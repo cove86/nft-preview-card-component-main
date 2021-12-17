@@ -1,12 +1,14 @@
 * {
   padding: 0;
-  margin-top: 24px;
 }
 
 body {
   background-color: hsl(217, 54%, 11%);
   color: hsl(0, 0%, 100%);
   font-family: "Outfit", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
 }
 
 img {
@@ -15,23 +17,63 @@ img {
   border-radius: 12px;
 }
 
+h4 {
+  font-size: 18px;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+
 .attribution {
   font-size: 11px;
-  /* text-align: center; */
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: center;
+  margin-top: 10px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
 .container {
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .card {
+  width: 300px;
   border: solid white;
   border-radius: 12px;
   padding: 20px;
   background-color: hsl(216, 50%, 16%);
+}
+
+.card-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+}
+
+/* .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+
+.avatar {
+  width: 10%;
+}
+
+.creation {
+  color: hsl(215, 51%, 70%);
 }
